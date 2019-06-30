@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages="org.bapan.spring.security.controller")
+@ComponentScan(basePackages="org.bapan.spring.security")
 public class MyAppConfig {
 	
 	//define a bean of view resolver
