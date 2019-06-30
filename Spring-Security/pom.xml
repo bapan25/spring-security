@@ -5,13 +5,14 @@
   <groupId>org.bapan</groupId>
   <artifactId>Spring-Security</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   
   
   <name>Spring-Security Maven Webapp</name>
   
   <properties>
   	<springframework.version>5.0.2.RELEASE</springframework.version>
+  	<springsecurity.version>5.0.0.RELEASE</springsecurity.version>
   	
   	<maven.compiler.source>1.8</maven.compiler.source>
   	<maven.compiler.target>1.8</maven.compiler.target>
@@ -31,7 +32,18 @@
     	<artifactId>spring-webmvc</artifactId>
     	<version>${springframework.version}</version>
     </dependency>
-    
+    <!-- spring security web -->
+    <dependency>
+    	<groupId>org.springframework.security</groupId>
+    	<artifactId>spring-security-web</artifactId>
+    	<version>${springsecurity.version}</version>
+    </dependency>
+    <!-- spring security config -->
+    <dependency>
+    	<groupId>org.springframework.security</groupId>
+    	<artifactId>spring-security-config</artifactId>
+    	<version>${springsecurity.version}</version>
+    </dependency>
     <dependency>
     	<groupId>javax.servlet</groupId>
     	<artifactId>javax.servlet-api</artifactId>
